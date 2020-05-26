@@ -23,11 +23,11 @@ alert("submitted");
 
     if (prediction[0] == 0) {
 
-        alert("You uploaded a nonmask!");
+        alert("You weared mask!");
 
     } else if (prediction[0] == 1) {
 
-        alert("You uploaded a mask!");
+        alert("You dint near mask!");
 
     } else {
         alert("Hummm... a weird error occurred.");
