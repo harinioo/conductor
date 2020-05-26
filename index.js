@@ -18,7 +18,7 @@ async function predict () {
 
 alert("submitted");
     const imageElement = document.getElementById('img');
-    let tensorImg = tf.browser.fromPixels(imageElement).resizeNearestNeighbor([150, 150]).toFloat().expandDims();
+    let tensorImg = tf.browser.fromPixels(imageElement).resizeNearestNeighbor([64, 64]).toFloat().expandDims();
     prediction = await model.predict(tensorImg).data();
 
     if (prediction[0] == 0) {
